@@ -1,0 +1,162 @@
+
+/* General Styling */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    color: #333;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+/* Main Content Layout */
+.container {
+    display: flex;
+    margin-top: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background-color: #fff;
+    padding: 15px;
+    border-right: 1px solid #e0e0e0;
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.sidebar input[type="search"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 0.95rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.sidebar input[type="search"]:focus {
+    border-color: #999;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.95rem;
+    padding: 8px 10px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #f0f0f0;
+    color: #0077cc;
+}
+
+/* Main Content Area */
+.main-content {
+    margin-left: 240px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05);
+    flex-grow: 1;
+}
+
+.main-content h2 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.main-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Tutorial Steps */
+.tutorial-step {
+    border-left: 4px solid #0077cc;
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.tutorial-step h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #0077cc;
+    font-weight: 500;
+}
+
+.tutorial-step p {
+    margin-bottom: 0;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #fff;
+    color: #999;
+    border-top: 1px solid #e0e0e0;
+    font-size: 0.85rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: static;
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+}
